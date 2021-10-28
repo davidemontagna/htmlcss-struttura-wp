@@ -1,24 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
 
 header{
     background-color: #e579e6;
-    width: 80%;
     height: 50px;
-    margin: 1% 5%;
 }
 
 .container{
     background-color: #e1d67a;
-    width: 80%;
     height: 200px;
-    margin: 0 5%;
+}
+
+header, .container, .title{
+    margin-bottom: 20px;
 }
 
 .container2{
     background-color: #0086fe;
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin: 1% 5%;
+    padding-bottom: 20px;
     display: inline-block;
 }
 
@@ -28,35 +38,31 @@ main::after{
     display: table;
 }
 
-.title{
+.title, .middle, .left{
     background-color: #abcfe7;
+
+}
+
+.title{
     float: top;
-    width: 100%;
     height: 30px;
-    margin-bottom: 20px;
+}
+
+.left, .middle{
+    float: left;
+    height: 300px;
 }
 
 .left{
-    background-color: #abcfe7;
-    float: left;
     width: 20%;
-    height: 300px;
-    
 }
 
 .middle{
-    background-color: #abcfe7;
-    float: left;
-    width: 55%;
-    height: 300px;
-    margin: 0 2%;
-    
+    width: 56%;
+    margin: 0 2%; 
 }
 
-.right{
-    background-color: #abcfe7;
-    float: right;
-    width: 20%;
-    height: 300px;
-    margin-top: 5px 3px;
+footer{
+    background-color: #8801fe;
+    height: 50px; 
 }
