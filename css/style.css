@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/*Dimensioni e distanziamento pagina*/
 body{
     margin: auto;
     width: 80%;
@@ -15,15 +16,23 @@ header{
     height: 50px;
 }
 
+main::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .container{
     background-color: #e1d67a;
     height: 200px;
 }
 
+/*Distanziamento sezioni*/
 header, .container, .title{
     margin-bottom: 20px;
 }
 
+/*Blocco contenitori blu*/
 .container2{
     background-color: #0086fe;
     width: 100%;
@@ -32,12 +41,7 @@ header, .container, .title{
     display: inline-block;
 }
 
-main::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
+/*Sottocontenitori azzurri*/
 .title, .middle, .left{
     background-color: #abcfe7;
 
@@ -61,6 +65,7 @@ main::after{
     width: 56%;
     margin: 0 2%; 
 }
+/*Fine parte sottocontenitori*/
 
 footer{
     background-color: #8801fe;
